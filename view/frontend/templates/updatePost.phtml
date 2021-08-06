@@ -1,0 +1,7 @@
+<?php /** @var $block Perspective\CrudM\Block\CrudBlockUpdate */ ?>
+<form action="<?php echo $block->getFormAction() ?>" method="post">
+    <p visibility: hidden>Id<input name="id" value="<?= $_GET['id']?>" ></p>
+    <p>Name<input name="name" type="text" size="40" placeholder="Name"></p>
+    <p>Content<textarea name="content" cols="40" rows="3" placeholder="Content"></textarea></p>
+    <input class="action primary" type="submit" value="Update Record">
+</form>

@@ -1,6 +1,6 @@
 <?php
 namespace Perspective\CrudM\Controller\Index;
-class updateid extends \Magento\Framework\App\Action\Action
+class updateId extends \Magento\Framework\App\Action\Action
 {
     protected $postFactory;
 
@@ -13,11 +13,11 @@ class updateid extends \Magento\Framework\App\Action\Action
     }
     public function execute()
     {
-        $id = $this->_request->getParam('id');
+        $id = $_POST['id'];
         $post = $this->postFactory->create();
         $post->load($id);
-        $post->setName('Test');
-        $post->setPost_content('Test_content');
+        $post->setName($_POST['name']);
+        $post->setPost_content($_POST['content']);
         $post->save();
         return $this->_redirect('crudm');
     }
