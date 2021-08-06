@@ -1,4 +1,5 @@
 <?php /** @var $block Perspective\CrudM\Block\CrudBlockUpdate */ ?>
+<h2> Update id:<?php echo $_GET['id'] ?> post.</h2>
 <form action="<?php echo $block->getFormAction() ?>" method="post">
     <p visibility: hidden>Id<input name="id" value="<?= $_GET['id']?>" ></p>
     <p>Name<input name="name" type="text" size="40" placeholder="Name"></p>
