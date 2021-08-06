@@ -1,0 +1,7 @@
+<form action="<?php echo $block->getFormAction() ?>" method="post">
+    <p>Name<input name="name" type="text" size="40" placeholder="Name"></p>
+    <p>Content<textarea name="content" cols="40" rows="3" placeholder="Content"></textarea></p>
+    <p>Created_at<input name="created_at" type="text" size="40" placeholder="yyyy/mm/dd"></p>
+    <p>Updated_at<input name="updated_at" type="text" size="40" placeholder="yyyy/mm/dd"></p>
+    <input class="action primary" type="submit" value="Add Record">
+</form>
