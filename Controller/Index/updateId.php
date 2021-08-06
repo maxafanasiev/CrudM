@@ -18,8 +18,6 @@ class updateid extends \Magento\Framework\App\Action\Action
         $post->load($id);
         $post->setName('Test');
         $post->setPost_content('Test_content');
-        $post->setUpdated_at('2021/08/06');
-        $post->setCreated_at('1970/01/01');
         $post->save();
         return $this->_redirect('crudm');
     }

@@ -16,8 +16,6 @@ class Create extends \Magento\Framework\App\Action\Action
         $post = $this->postFactory->create();
         $post->setName($_POST['name']);
         $post->setPost_content($_POST['content']);
-        $post->setCreated_at($_POST['created_at']);
-        $post->setUpdated_at($_POST['updated_at']);
         $post->save();
         return $this->_redirect('crudm');
     }
