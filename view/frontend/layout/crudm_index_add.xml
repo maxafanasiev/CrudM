@@ -7,7 +7,7 @@
     <referenceContainer name="content">
         <block
                 name="crud.block.add"
-                class="Perspective\CrudM\Block\CrudBlockB"
+                class="Perspective\CrudM\Block\CrudBlockAdd"
                 template="Perspective_CrudM::createPost.phtml"
         />
     </referenceContainer>
